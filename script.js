@@ -1,4 +1,4 @@
-const productEL = document.querySelector(".products"); // Wrapper elementni tanlash
+const productEL = document.querySelector(".products"); 
 const BASE_URL = "https://dummyjson.com";
 
 async function fetchData(endpoint) {
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     window.addEventListener("load", () => {
-        fetchData("/posts?limit=100"); // Postlar uchun endpoint
+        fetchData("/posts?limit=100");
     });
 
     function createCard(data) {
